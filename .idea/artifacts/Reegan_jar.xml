@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Reegan:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Reegan_jar</output-path>
+    <root id="archive" name="Reegan.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/sample/resources/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Reegan" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/jna-5.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/itext-2.1.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/log4j-1.2.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/tess4j-4.5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/ghost4j-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/lept4j-1.13.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/pdfbox-2.0.20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/commons-io-2.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/fontbox-2.0.20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/slf4j-api-1.7.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/logback-core-1.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/jbig2-imageio-3.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/pdfbox-tools-2.0.20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/logback-classic-1.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/jai-imageio-core-1.4.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/jboss-logging-3.1.4.GA.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/jboss-vfs-3.2.15.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/pdfbox-debugger-2.0.20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/commons-beanutils-1.9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/xmlgraphics-commons-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../tess4j/commons-collections-3.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../mysql-connector-java-8.0.21/mysql-connector-java-8.0.21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../ApachePOI/poi-1.8.0-dev-20020919.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

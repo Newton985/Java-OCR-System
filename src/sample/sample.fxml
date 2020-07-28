@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane layoutX="1.0" layoutY="3.0" prefHeight="634.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="                 New Entry                         ">
+             <AnchorPane prefHeight="574.0" prefWidth="977.0">
+               <Button fx:id="selectImageBt" layoutX="983.0" layoutY="75.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="172.0" style="-fx-background-color: #1F8FE8;" text="Select Image" textFill="WHITE">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Button>
+               <Button fx:id="scanImageBt" layoutX="986.0" layoutY="151.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="169.0" style="-fx-background-color: #d65e0b;" text="Scan" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Button>
+               <TextArea fx:id="detailsLabel" layoutX="395.0" layoutY="26.0" prefHeight="176.0" prefWidth="565.0" style="-fx-background-color: #f4f4f4; -fx-border-color: #3446BC; -fx-label-padding: 5px; -fx-border-width: 0px;" text="no details" />
+               <Button fx:id="saveButton" layoutX="286.0" layoutY="479.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="218.0" style="-fx-background-color: #1F8FE8;" text="save" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="20.0" />
+                  </font>
+               </Button>
+               <Button fx:id="cancelButton" layoutX="686.0" layoutY="479.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="218.0" style="-fx-background-color: #FF1A38;" text="cancel" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="20.0" />
+                  </font>
+               </Button>
+                  <Text fill="#d65e0b" layoutX="12.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scan Image" wrappingWidth="146.9830722808838">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Line endX="1082.0" endY="-16.0" layoutX="115.0" layoutY="265.0" startX="-116.0" startY="-16.0" stroke="#d65e0b" />
+                  <Text fill="#d65e0b" layoutX="12.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manual Entry" wrappingWidth="146.9830722808838">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="nameTextField" layoutX="51.0" layoutY="298.0" prefHeight="46.0" prefWidth="300.0" promptText="name" style="-fx-border-color: #1F8FE8; -fx-border-width: 2px;" />
+                  <TextField fx:id="contactTextField" layoutX="837.0" layoutY="298.0" prefHeight="46.0" prefWidth="297.0" promptText="contact" style="-fx-border-color: #1F8FE8; -fx-border-width: 2px;" />
+                  <TextField fx:id="birthTextField" layoutX="51.0" layoutY="372.0" prefHeight="46.0" prefWidth="301.0" promptText="Place  of birth (POB)" style="-fx-border-color: #1F8FE8; -fx-border-width: 2px;" />
+                  <TextField fx:id="genderTextField" layoutX="450.0" layoutY="372.0" prefHeight="46.0" prefWidth="300.0" promptText="gender" style="-fx-border-color: #1F8FE8; -fx-border-width: 2px;" />
+                  <Line endX="1077.0" endY="-16.0" layoutX="119.0" layoutY="468.0" startX="-116.0" startY="-16.0" stroke="#d65e0b" />
+                  <AnchorPane fx:id="imagePane" layoutX="6.0" layoutY="26.0" prefHeight="212.0" prefWidth="382.0">
+                     <children>
+                     <ProgressIndicator fx:id="progressIndicator" layoutX="147.0" layoutY="64.0" prefHeight="45.0" prefWidth="62.0" style="-fx-opacity: 1;" />
+                        <Text fx:id="progressText" layoutX="107.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Image Selected" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="copyPOB" layoutX="502.0" layoutY="206.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="98.0" style="-fx-background-color: #97E2B3;" text="copy as POB">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font></Button>
+                  <Button fx:id="copyGender" layoutX="607.0" layoutY="206.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="113.0" style="-fx-background-color: #97E2B3;" text="copy as gender">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font></Button>
+                  <Button fx:id="copyName" layoutX="395.0" layoutY="206.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: #97E2B3;" text="copy as name">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font></Button>
+                  <TextField fx:id="idTextField" layoutX="450.0" layoutY="298.0" prefHeight="46.0" prefWidth="297.0" promptText="ID number" style="-fx-border-color: #1F8FE8; -fx-border-width: 2px;" />
+                  <Button fx:id="copyID" layoutX="725.0" layoutY="206.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="113.0" style="-fx-background-color: #97E2B3;" text="copy as ID No.">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="copyDate" layoutX="847.0" layoutY="206.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="113.0" style="-fx-background-color: #97E2B3;" text="copy as DOB">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="dateTextField" layoutX="837.0" layoutY="372.0" prefHeight="46.0" prefWidth="297.0" promptText="date of birth (DOB)" style="-fx-border-color: #1F8FE8; -fx-border-width: 2px;" />
+             </AnchorPane>
+          </Tab>
+           <Tab text="                 Passenger Details                         ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <TableView fx:id="detailsTable" layoutX="5.0" layoutY="62.0" prefHeight="495.0" prefWidth="1186.0">
+                          <columns>
+                            <TableColumn fx:id="nameColumn" prefWidth="284.0" text="Name" />
+                            <TableColumn fx:id="contactColumn" prefWidth="181.0" text="Contact" />
+                              <TableColumn fx:id="pobColumn" prefWidth="240.0" text="Place Of Birth" />
+                              <TableColumn fx:id="genderColumn" prefWidth="92.0" text="Gender" />
+                              <TableColumn fx:id="ageColumn" prefWidth="144.0" text="Date of Birth" />
+                              <TableColumn fx:id="idColumn" prefWidth="123.0" text="ID" />
+                              <TableColumn fx:id="dateRecordedColumn" prefWidth="115.0" text="Date Recorded" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="refreshButton" layoutX="573.0" layoutY="20.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="114.0" style="-fx-background-color: #1F8FE8;" text="Print" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="searchTextView" layoutX="291.0" layoutY="20.0" prefHeight="33.0" prefWidth="232.0" promptText="search person" />
+                        <Button fx:id="deleteButton" layoutX="773.0" layoutY="18.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="160.0" style="-fx-background-color: #FF1A38;" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
